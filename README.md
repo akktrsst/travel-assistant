@@ -2,6 +2,9 @@
 
 An intelligent travel planning assistant powered by LLMs that helps users plan their trips by providing personalized recommendations and itineraries.
 
+## Live Demo
+Visit our live demo at: https://akktrsst.github.io/travel-assistant/
+
 ## Features
 
 - Interactive chat interface for travel planning
@@ -14,7 +17,7 @@ An intelligent travel planning assistant powered by LLMs that helps users plan t
 
 1. Clone the repository:
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/akktrsst/travel-assistant.git
 cd travel-assistant
 ```
 
@@ -29,7 +32,7 @@ Create a `.env` file in the root directory with:
 HF_API_TOKEN=your_huggingface_token
 ```
 
-## Usage
+## Local Development
 
 1. Run the Gradio app:
 ```bash
@@ -40,12 +43,22 @@ python -m app.gradio_app
 - Local URL: http://127.0.0.1:7861
 - Or use the public URL provided by Gradio
 
-3. Start chatting with the assistant:
-- Describe your travel plans
-- The assistant will automatically extract preferences
-- Generate detailed itineraries based on your preferences
+## Deployment
 
-## Project Structure 
+The app is automatically deployed using GitHub Actions when changes are pushed to the main branch.
+
+To deploy manually:
+
+1. Set up environment variables in GitHub:
+   - Go to repository Settings → Secrets
+   - Add `HF_API_TOKEN` with your Hugging Face API token
+
+2. Push to main branch:
+```bash
+git push origin main
+```
+
+## Project Structure
 
 ## Contributing
 
