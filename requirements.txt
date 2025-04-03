@@ -1,0 +1,11 @@
+torch>=2.0.0
+fastapi==0.104.1
+uvicorn==0.24.0
+python-dotenv==1.0.0
+requests==2.31.0
+transformers==4.35.2
+pydantic==2.4.2
+python-multipart>=0.0.9
+huggingface-hub==0.19.4
+ctransformers==0.2.27
+gradio==4.19.2 
